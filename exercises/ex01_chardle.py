@@ -40,7 +40,9 @@ if letter_four == letter_input:
 if letter_five == letter_input:
     matching_instances = matching_instances + 1
 
-if matching_instances > 0:
+if matching_instances > 1:
     print(str(matching_instances) + " instances of " + letter_input + " found in " + word_input)
+if matching_instances == 1:
+    print(str(matching_instances) + " instance of " + letter_input + " found in " + word_input)
 if matching_instances == 0:
     print("No instances of " + letter_input + " found in " + word_input)
