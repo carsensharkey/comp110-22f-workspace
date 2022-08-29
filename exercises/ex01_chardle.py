@@ -17,27 +17,21 @@ letter_three: str = word_input[2]
 letter_four: str = word_input[3]
 letter_five: str = word_input[4]
 
-if letter_one == letter_input:
-    print(letter_input + " found at index 0")
-if letter_two == letter_input:
-    print(letter_input + " found at index 1")
-if letter_three == letter_input:
-    print(letter_input + " found at index 2")
-if letter_four == letter_input:
-    print(letter_input + " found at index 3")   
-if letter_five == letter_input:
-    print(letter_input + " found at index 4")
-
 matching_instances: int = 0
 if letter_one == letter_input:
+    print(letter_input + " found at index 0")
     matching_instances = matching_instances + 1
 if letter_two == letter_input:
+    print(letter_input + " found at index 1")
     matching_instances = matching_instances + 1
 if letter_three == letter_input:
+    print(letter_input + " found at index 2")
     matching_instances = matching_instances + 1
 if letter_four == letter_input:
-    matching_instances = matching_instances + 1
+    print(letter_input + " found at index 3")
+    matching_instances = matching_instances + 1   
 if letter_five == letter_input:
+    print(letter_input + " found at index 4")
     matching_instances = matching_instances + 1
 
 if matching_instances > 1:
