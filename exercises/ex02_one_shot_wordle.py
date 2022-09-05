@@ -18,15 +18,15 @@ while word_index < len(secret_word):
     else:
         right_letter_wrong_spot: bool = False
         alternate_index: int = 0
-        while right_letter_wrong_spot == False and alternate_index < len(secret_word):
+        while right_letter_wrong_spot is False and alternate_index < len(secret_word):
             if player_guess[word_index] == secret_word[alternate_index]:
                 """Check to see if the guessed character exists anywhere else in the word"""
                 right_letter_wrong_spot = True
             else:
                 alternate_index = alternate_index + 1
-        if right_letter_wrong_spot == True:
-                emoji_result = emoji_result + "\U0001F7E8"
-                """Guessed character exists elsewhere, return a yellow square"""
+        if right_letter_wrong_spot is True:
+            emoji_result = emoji_result + "\U0001F7E8"
+            """Guessed character exists elsewhere, return a yellow square"""
         else:
             emoji_result = emoji_result + "\U00002B1C"
             """Guessed character does not exist in the word at all, return a white square"""
@@ -38,3 +38,4 @@ if player_guess == secret_word:
     print("Woo! You got it!")
 else:
     print("Not quite. Play again soon!")
+"""Tells the player whether or not they have guessed the word exactly correct"""
