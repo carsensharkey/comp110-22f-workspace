@@ -6,7 +6,7 @@ player_guess: str = input(f"What is your {len(secret_word)}-letter guess? ")
 
 while len(player_guess) != len(secret_word):
     player_guess = input(f"That was not {len(secret_word)} letters! Try again: ")
-    """Ensure that the player's guess word has 6 characters"""
+    """Ensure that the player's guess word has the same number of characters as the secret word"""
 
 word_index: int = 0
 emoji_result: str = ""
@@ -38,4 +38,4 @@ if player_guess == secret_word:
     print("Woo! You got it!")
 else:
     print("Not quite. Play again soon!")
-"""Tells the player whether or not they have guessed the word exactly correct"""
+"""Tell the player whether or not they have guessed the word exactly correct"""
