@@ -46,7 +46,7 @@ def input_guess(expected_length: int) -> str:
 
 def main() -> None:
     """Establish what the secret word is, keep track of how many turns the user has spent, whether the user has won the game, and control the flow of the game."""
-    secret = "codes"
+    secret = "juicy"
     guess = ""
     expected_length = len(secret)
     i = 1
