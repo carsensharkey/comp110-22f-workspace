@@ -1,6 +1,7 @@
 """Practice with list utility functions."""
 __author__ = "730560667"
 
+
 def only_evens(xs: list[int]) -> list[int]:
     """Given a list of ints, return a new list containing the even elements of the input list."""
     i: int = 0
@@ -28,7 +29,7 @@ def sub(xs: list[int], start: int, end: int) -> list[int]:
     if start < 0:
         start = 0
     if end > len(xs):
-        end = len(xs) - 1
+        end = len(xs)
     if len(xs) == 0 or start > len(xs) or end <= 0:
         return []
     i = start
