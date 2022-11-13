@@ -159,7 +159,7 @@ class Model:
 
     def check_contacts(self) -> None:
         """Test whether any two Cell values come in contact with one another."""
-        already_clashed: list = []
+        already_clashed: list[Cell] = []
         for cell1 in self.population:
             for cell2 in self.population:
                 if cell1 != cell2 and cell1 not in already_clashed:
@@ -174,5 +174,3 @@ class Model:
             if cell.sickness > 0:
                 return False
         return True
-
-            

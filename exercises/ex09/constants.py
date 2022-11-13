@@ -11,7 +11,7 @@ MIN_Y: float = -MAX_Y
 VIEW_HEIGHT: int = BOUNDS_HEIGHT + 20
 
 CELL_RADIUS: int = 15
-CELL_COUNT: int = 100
+CELL_COUNT: int =  150
 CELL_SPEED: float = 5.0
 
 VULNERABLE: int = 0
